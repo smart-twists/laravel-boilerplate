@@ -1,0 +1,17 @@
+{
+  "Login": "ورود به سایت",
+  "Register": "عضویت در سایت",
+  "E-Mail Address": "آدرس ایمیل",
+  "Password": "کلمه عبور",
+  "Remember Me": "مرا به خاطر بسپار",
+  "Forgot Your Password?": "کلمه عبور خود را فراموش کرده اید؟",
+  "Logout": "خروج از سیستم",
+  "Mobile": "شماره موبایل",
+  "Reset Password": "تغییر کلمه عبور",
+  "Send Password Reset Link": "ارسال لینک تغییر کلمه عبور",
+  "First Name": "نام",
+  "Last Name": "نام خانوادگی",
+  "Confirm Password": "تکرار کلمه عبور",
+  "Dashboard": "داشبورد",
+  "Dear user, Welcome to your dashboard panel.": "کاربر گرامی، به پنل خود خوش آمدید."
+}
