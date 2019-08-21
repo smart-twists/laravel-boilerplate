@@ -1,17 +1,77 @@
 @extends('layouts.app')
-@section('content')
-    <div class="container" style="margin-top: 20vh;">
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">ورود به سیستم</h3>
-                    </div>
-                    <div class="panel-body">
-                        <input type="text" name="username" id="username" class="form-control" value="" title=""
-                               required="required">
+@push('css')
+<style>
+    html, body, #app, #login-wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+    }
+    body { 
+        background: url('{{ asset('images/login-bg.jpg') }}') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .login-box{
+        background-color:rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        color: white;
+      }
 
+      a{
+          color: #b1c0ea;
+      }
+</style>
+@endpush
+@section('content')
+    <div class="d-flex flex-column align-items-center justify-content-center" id="login-wrapper">
+        <div class="row rtl">
+            <div class="col-sm-4 offset-sm-4">
+                <div class="login-box rounded p-3">
+                    <h2 class="mb-4">
+                        {{ __('Login') }}
+                    </h2>
+
+                    <div class="input-group input-group rounded mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="width: 42px">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="username" placeholder="{{__('Username') }}" class="form-control">
                     </div>
+
+                    <div class="input-group input-group rounded mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="width: 42px">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="password" name="password" placeholder="{{__('Password') }}" class="form-control">
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" name="remember" type="checkbox" value="1" id="remember-me">
+                        <label class="form-check-label" for="remember-me">
+                            {{ __('Remember Me') }}
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary pull-left">
+                        {{ __('Login') }}
+                    </button>
+                    <div class="clearfix"></div>
+                    <hr>
+                    <div class="text-center">
+                        {{ __("Don't have an account?") }}
+                        <a href="{{ url('register') }}">{{ __('Sign Up') }}</a>
+                        <br>
+                        <a href="{{ url('password/reset') }}">{{ __('Forgot Your Password?') }}</a>
+                    </span>
                 </div>
             </div>
         </div>

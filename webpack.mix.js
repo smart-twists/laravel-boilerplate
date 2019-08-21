@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .sass('resources/sass/admin.scss', 'public/css')
-   .sass('resources/sass/client.scss', 'public/css')
+   .js('resources/js/sb-admin-2.js', 'public/js')
+   .sass('resources/scss/app.scss', 'public/css')
+   .sass('resources/scss/sb-admin-2.scss', 'public/css')
     .version();

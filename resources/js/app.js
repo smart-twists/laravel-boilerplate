@@ -4,9 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 require('./bootstrap');
-require('../bower_components/adminlte/dist/js/app');
 require('select2/dist/js/select2.full');
 require('select2/dist/js/i18n/fa');
+require('icheck/icheck');
 
 import vue from "vue";
 window.Vue = vue;
@@ -14,6 +14,12 @@ window.Vue = vue;
 import VuePersianDatetimePicker from "vue-persian-datetime-picker";
 
 Vue.component('date-picker', VuePersianDatetimePicker);
+
+import VueSwal from 'vue-swal'
+Vue.use(VueSwal);
+
+import numFormat from 'vue-filter-number-format';
+Vue.filter('numFormat', numFormat);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -36,6 +42,11 @@ const app = new Vue({
 });
 
 $(document).ready(function () {
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_flat-blue',
+        radioClass: 'iradio_flat-blue',
+        increaseArea: '-10%' // optional
+    });
     $('[tooltip]').tooltip();
     $(".select2").select2({
         dir: "rtl",

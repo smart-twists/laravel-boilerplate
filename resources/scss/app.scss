@@ -1,0 +1,42 @@
+// Variables
+@import "variables";
+// Mixins
+@import "mixins";
+
+// Fonts
+@import "../iransans/css/fontiran.css";
+
+//Persian date picker
+//@import "~persian-datepicker/src/sass/persian-datepicker";
+
+//import bootstrap v4 rtl
+@import "~bootstrap-v4-rtl/scss/bootstrap-rtl.scss";
+
+//select2
+@import "~select2/dist/css/select2.min.css";
+
+//Font awesome
+@import "~font-awesome/css/font-awesome.css";
+
+//icheck
+@import "~icheck/skins/flat/blue.css";
+
+html, body {
+  direction: rtl;
+}
+
+body {
+  font-family: IRANSans, Tahoma, serif !important;
+  font-weight: 300;
+  direction: rtl;
+  background-color: #E2E2E2;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea, b, .main-header .logo {
+  font-family: IRANSans, Tahoma, serif !important;
+}
+
+.tooltip {
+  font-family: IRANSans, Tahoma, serif;
+}
