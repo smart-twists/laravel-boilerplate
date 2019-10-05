@@ -22,5 +22,7 @@
   "Dashboard": "داشبورد",
   "Dear user, Welcome to your dashboard panel.": "کاربر گرامی، به پنل خود خوش آمدید.",
   "Add New": "افزودن جدید",
-  "Action": "عملیات"
+  "Action": "عملیات",
+  "Save": "ذخیره",
+  "Cancel": "لغو"
 }
