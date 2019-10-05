@@ -1,5 +1,8 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
-<div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+<div class="form-group col-sm-12 col-lg-12 {{ $errors->has('$FIELD_NAME$') ? ' has-error' : '' }}">
+    {!! Form::label('$FIELD_NAME$', __('validation.attributes.$FIELD_NAME$').':') !!}
     {!! Form::textarea('$FIELD_NAME$', null, ['class' => 'form-control']) !!}
+    @if ($errors->has('$FIELD_NAME$'))
+        <span class="help-block"><strong>{{ $errors->first('$FIELD_NAME$') }}</strong></span>
+    @endif
 </div>
