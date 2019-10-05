@@ -24,5 +24,13 @@
   "Add New": "افزودن جدید",
   "Action": "عملیات",
   "Save": "ذخیره",
-  "Cancel": "لغو"
+  "Cancel": "لغو",
+  "Show": "نمایش",
+  "Edit": "ویرایش",
+  "Delete": "حذف",
+  "Are you sure?": "آیا اطمینان دارید؟",
+  "saved successfully.": "با موفقیت ذخیره شد.",
+  "not found": "پیدا نشد",
+  "updated successfully.": "با موفقیت ویرایش شد.",
+  "deleted successfully.": "با موفقیت حذف شد."
 }
