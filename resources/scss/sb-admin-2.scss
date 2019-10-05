@@ -10,6 +10,9 @@
 //icheck
 @import "~icheck/skins/flat/blue.css";
 
+//fontawesome
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
 
 // Import Custom SB Admin 2 Mixins and Components
 @import "mixins.scss";
@@ -29,18 +32,38 @@
 html, body {
     direction: rtl;
   }
-  
+
   body {
     font-family: IRANSans, Tahoma, serif !important;
     font-weight: 300;
     direction: rtl;
     margin: 0;
   }
-  
+
   h1, h2, h3, h4, h5, h6, input, textarea, b, .main-header .logo {
     font-family: IRANSans, Tahoma, serif !important;
   }
-  
+
   .tooltip {
     font-family: IRANSans, Tahoma, serif;
   }
+
+  .input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.topbar .dropdown .dropdown-menu {
+    right: auto;
+    left: 0.75rem;
+    text-align: right;
+}
