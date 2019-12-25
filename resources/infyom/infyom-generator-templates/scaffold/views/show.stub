@@ -11,7 +11,7 @@
             <div class="card-body">
                 <div class="row">
                     @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
-                    <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-secondary">{{ __('Back') }}</a>
+                    <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-secondary col-sm-12">{{ __('Back') }}</a>
                 </div>
             </div>
         </div>
