@@ -28,6 +28,7 @@
   "Action": "عملیات",
   "Save": "ذخیره",
   "Cancel": "لغو",
+  "Back": "بازگشت",
   "Show": "نمایش",
   "Edit": "ویرایش",
   "Delete": "حذف",
@@ -35,5 +36,11 @@
   "saved successfully.": "با موفقیت ذخیره شد.",
   "not found": "پیدا نشد",
   "updated successfully.": "با موفقیت ویرایش شد.",
-  "deleted successfully.": "با موفقیت حذف شد."
+  "deleted successfully.": "با موفقیت حذف شد.",
+  "Province": "استان",
+  "Provinces": "استان ها",
+  "City": "شهر",
+  "Cities": "شهر ها",
+  "User": "کاربر",
+  "Users": "کاربران"
 }
